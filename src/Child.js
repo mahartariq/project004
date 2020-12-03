@@ -6,8 +6,9 @@ function Child() {
     return (
     <div>
 
-      {mynumber} From Child Component<br></br>
+      {mynumber[0]} From Child Component<br></br>
     
+        <button onClick={()=>{mynumber[1](++mynumber[0])}}>Click Me</button>
 
     </div>
   );

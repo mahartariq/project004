@@ -1,16 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import NumberContext from './NumberContext';
 import Parent from './Parent';
 
 function App() {
 //  let [number, setnumber] = useState(22);
-  let code = 11;  
+  let code = useState(11);  
 return (
 
     <NumberContext.Provider value={code}>
 
       <div>
-        Hello World From App Component
+       From App Component
       <Parent/>
       </div>
 
