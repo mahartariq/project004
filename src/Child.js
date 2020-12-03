@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import NumberContext from './NumberContext';
 
-function Child(props) {
-  return (
+function Child() {
+  let mynumber = useContext(NumberContext);
+    return (
     <div>
 
-      Hello World From Child Component<br></br>
-      {props.num}
+      {mynumber} From Child Component<br></br>
+    
+
     </div>
   );
 }
